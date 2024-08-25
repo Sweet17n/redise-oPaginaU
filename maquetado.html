@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNAULA - Rediseño</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Archivo CSS personalizado -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- Encabezado Fijo -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="assets\logo (1).png" alt="UNAULA" width="150">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <!-- Botón de menú desplegable -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="unaulistasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Unaulistas
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="unaulistasDropdown">
+                        <a class="dropdown-item" href="#">Aspirantes</a>
+                        <a class="dropdown-item" href="#">Estudiantes</a>
+                        <a class="dropdown-item" href="#">Egresados</a>
+                        <a class="dropdown-item" href="#">Docentes</a>
+                        <a class="dropdown-item" href="#">Administrativos</a>
+                        <a class="dropdown-item" href="#">Fundadores</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Universidad</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Programas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Admisiones</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Internacionalización</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Extensión</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Investigación</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Bienestar</a></li>
+            </ul>
+            <!-- Campo de búsqueda con ícono -->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-search" type="submit"><i class="bi bi-search"></i></button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Banner Superior -->
+   <div class="banner">
+    <div class="banner-overlay"></div>
+    <div class="banner-text">
+        <h1 class="display-4">Bienvenido a UNAULA</h1>
+        <p class="lead">Donde la educación transforma vidas</p>
+        <div class="mt-4">
+            <a href="#" class="btn btn-danger btn-lg mr-3">Inscríbete ahora</a>
+            <a href="#" class="btn btn-warning btn-lg">Conoce nuestros programas</a>
+        </div>
+    </div>
+   </div>
+
+    <!-- Botones Flotantes -->
+    <div class="floating-buttons">
+        <a href="#" class="btn btn-success mb-3">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+        <a href="#" id="chatbotButton" class="btn btn-warning" data-toggle="tooltip" data-placement="left" title="¿Necesitas ayuda? Habla con nuestro chatbot.">
+            <i class="bi bi-chat-dots"></i>
+        </a>
+    </div>
+
+    <!-- Secciones Modulares -->
+    <section class="container-fluid py-5 bg-light">
+        <div class="row justify-content-center">
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <div class="icon mb-3">
+                            <i class="bi bi-person-circle" style="font-size: 2rem; color: #fbbd4b;"></i>
+                        </div>
+                        <h5 class="card-title text-warning">Servicios al Estudiante</h5>
+                        <div class="collapse" id="servicesList">
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><a href="#" class="text-decoration-none text-primary">ULISES</a></li>
+                                <li><a href="#" class="text-decoration-none text-primary">Obtenga o cambie su clave ULISES</a></li>
+                                <li><a href="#" class="text-decoration-none text-primary">Video tutorial</a></li>
+                                <li><a href="#" class="text-decoration-none text-primary">Turnos de matrícula pregrado 2024-2</a></li>
+                                <li><a href="#" class="text-decoration-none text-primary">Formatos</a></li>
+                                <li><a href="#" class="text-decoration-none text-primary">Correo institucional</a></li>
+                                <li><a href="#" class="text-decoration-none text-primary">Unaula virtual</a></li>
+                                <li><a href="#" class="text-decoration-none text-primary">LEX</a></li>
+                                <li><a href="#" class="text-decoration-none text-primary">Encuesta auto evaluación</a></li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-warning" type="button" data-toggle="collapse" data-target="#servicesList">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <div class="icon mb-3">
+                            <i class="bi bi-calendar-event" style="font-size: 2rem; color: #fbbd4b;"></i>
+                        </div>
+                        <h5 class="card-title text-warning">Calendario Académico</h5>
+                        <div class="collapse" id="calendarList">
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><a href="#" class="text-decoration-none text-primary">Calendario académico pregrado 2024</a></li>
+                                <li><a href="#" class="text-decoration-none text-primary">Calendario académico posgrados 2024</a></li>
+                                <li><a href="#" class="text-decoration-none text-primary">Taquilla virtual - Admisiones y Registro</a></li>
+                                <li><a href="#" class="text-decoration-none text-primary">Mesa de ayuda - TIC</a></li>
+                                <li><a href="#" class="text-decoration-none text-primary">Preguntas frecuentes</a></li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-warning" type="button" data-toggle="collapse" data-target="#calendarList">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center">
+                        <div class="icon mb-3">
+                            <i class="bi bi-cash-stack" style="font-size: 2rem; color: #fbbd4b;"></i>
+                        </div>
+                        <h5 class="card-title text-warning">Pagos en Línea</h5>
+                        <div class="collapse" id="paymentsList">
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><a href="#" class="text-decoration-none text-primary">Pagos en línea - Servicios de Admisiones y Registro</a></li>
+                                <li><a href="#" class="text-decoration-none text-primary">Pago en línea liquidaciones internas</a></li>
+                                <li><a href="#" class="text-decoration-none text-primary">Pago de crédito</a></li>
+                                <li><a href="#" class="text-decoration-none text-primary">Test de caracterización - egresados</a></li>
+                                <li><a href="#" class="text-decoration-none text-primary">Oferta educación continua</a></li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-warning" type="button" data-toggle="collapse" data-target="#paymentsList">
+                            Ver más
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h5>Universidad</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Pregrado</a></li>
+                        <li><a href="#">Posgrado</a></li>
+                        <li><a href="#">Donaciones</a></li>
+                        <li><a href="#">Revistas</a></li>
+                        <li><a href="#">Pagos en Línea</a></li>
+                        <li><a href="#">Guía Telefónica</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Institucional</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Derechos Pecuniarios</a></li>
+                        <li><a href="#">Financiación Matrículas</a></li>
+                        <li><a href="#">Correo Institucional</a></li>
+                        <li><a href="#">Fondo Editorial</a></li>
+                        <li><a href="#">Convocatorias UNAULA</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Enlaces de Interés</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">ULISES</a></li>
+                        <li><a href="#">SIRENA</a></li>
+                        <li><a href="#">SINBAD</a></li>
+                        <li><a href="#">CRM</a></li>
+                        <li><a href="#">EDUCO</a></li>
+                        <li><a href="#">Atención al Usuario</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4 text-center">
+                <div class="col-md-12">
+                    <img src="assets\footer.png" alt="UNAULA" class="footer-logo">
+                    <p class="mt-3">Carrera 55 N° 49-51. Medellín-Colombia-Suramérica.<br>
+                        Tel: (+57) 604 511 21 99<br>
+                        Vigilada Mineducación - CÓDIGO SNIES IES 1814</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p>&copy; 2024 Universidad Autónoma Latinoamericana. Todos los derechos reservados.</p>
+                    <div>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap y JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript para Tooltip -->
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+
+            $('#chatbotButton').click(function(){
+                var $this = $(this);
+                $this.tooltip('show');
+                setTimeout(function(){
+                    $this.tooltip('hide');
+                }, 2000); // Se oculta después de 2 segundos
+            });
+        });
+    </script>
+</body>
+
+</html>
